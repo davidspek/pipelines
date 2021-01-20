@@ -36,8 +36,8 @@ require (
 	github.com/robfig/cron v1.2.0
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/viper v1.3.2
-	github.com/stretchr/testify v1.5.1
-	golang.org/x/net v0.0.0-20200520004742-59133d7f0dd7
+	github.com/stretchr/testify v1.6.1
+	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b
 	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a // indirect
 	google.golang.org/api v0.20.0
 	google.golang.org/genproto v0.0.0-20200317114155-1f3552e48f24
@@ -46,7 +46,7 @@ require (
 	k8s.io/api v0.17.9
 	k8s.io/apimachinery v0.17.9
 	k8s.io/client-go v0.17.9
-	k8s.io/code-generator v0.17.9
+	k8s.io/code-generator v0.20.2
 	k8s.io/kubernetes v1.11.1
 	sigs.k8s.io/controller-runtime v0.5.11
 	sigs.k8s.io/testing_frameworks v0.1.1 // indirect
