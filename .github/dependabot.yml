@@ -22,7 +22,7 @@ updates:
     open-pull-requests-limit: 10
 
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/backend"
     schedule:
       interval: "daily"
     # Allow up to 10 open pull requests for pip dependencies
