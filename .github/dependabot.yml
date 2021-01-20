@@ -54,41 +54,6 @@ updates:
       interval: daily
     open-pull-requests-limit: 10
   - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/predict
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/delete_cluster
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/analyze
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/create_cluster
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/transform
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/base
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
-    directory: /components/deprecated/dataproc/train
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: docker
     directory: /components/aws/emr
     schedule:
       interval: daily
