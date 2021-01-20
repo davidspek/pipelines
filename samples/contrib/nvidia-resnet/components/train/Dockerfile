@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM nvcr.io/nvidia/tensorflow:19.03-py3
+FROM nvcr.io/nvidia/tensorflow:19.10-py3
 
 RUN pip install keras
 ADD src /workspace
