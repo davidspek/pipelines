@@ -18,7 +18,7 @@ import os
 
 NAME = 'chicago_crime_trainer'
 VERSION = '0.0'
-REQUIRED_PACKAGES = ['numpy>=1.14','pandas>=0.22','scikit-learn>=0.20.2','tensorflow>=1.13,<2']
+REQUIRED_PACKAGES = ['numpy>=1.14','pandas>=0.22','scikit-learn>=0.20.2','tensorflow>=1.13,<3']
 
 
 setup(
