@@ -265,7 +265,7 @@ go_repository(
 go_repository(
     name = "com_github_go_openapi_analysis",
     importpath = "github.com/go-openapi/analysis",
-    tag = "v0.17.2",
+    tag = "v0.19.16",
 )
 
 go_repository(
