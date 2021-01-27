@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    "docker:enableMajor",
+    ":masterIssue",
+    "group:linters",
+    "group:polymer",
+    "group:googleapis",
+    "group:goOpenapi"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automergeType": "branch",
+    "dependencyDashboardApproval": false
+  },
+  "packageRules": [
+    {
+      "updateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+        "datasources": ["docker"],
+        "updateTypes": ["patch", "minor"],
+        "groupName": "docker patch & minor updates"
+    }
+  ],
+  "ignorePaths": ["components/deprecated/"],
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": true
+}
