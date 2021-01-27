@@ -29,9 +29,16 @@
         "datasources": ["docker"],
         "updateTypes": ["patch", "minor"],
         "groupName": "docker patch & minor updates"
+    },
+    {
+        "depTypeList": ["go_repository"],
+        "updateTypes": ["patch", "minor"],
+        "groupName": "Bazel workspace updates"
+
     }
   ],
   "ignorePaths": ["components/deprecated/"],
   "dependencyDashboard": true,
-  "dependencyDashboardApproval": true
+  "dependencyDashboardApproval": true,
+  "separateMinorPatch": true
 }
