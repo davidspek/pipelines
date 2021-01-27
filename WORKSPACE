@@ -909,7 +909,7 @@ go_repository(
 go_repository(
     name = "com_github_docker_distribution",
     importpath = "github.com/docker/distribution",
-    tag = "v2.7.0",
+    tag = "v2.7.1",
 )
 
 go_repository(
