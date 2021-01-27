@@ -12,7 +12,8 @@
     "group:linters",
     "group:polymer",
     "group:googleapis",
-    "group:goOpenapi"
+    "group:goOpenapi",
+    "default:automergeLinters"
   ],
   "lockFileMaintenance": {
     "enabled": true,
