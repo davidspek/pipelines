@@ -87,14 +87,14 @@ go_repository(
     build_file_generation = "on",
     build_file_proto_mode = "disable",
     importpath = "k8s.io/kubernetes",
-    tag = "v1.11.1",
+    tag = "v1.11.10",
 )
 
 go_repository(
     name = "com_github_googleapis_gnostic",
     build_file_proto_mode = "disable",
     importpath = "github.com/googleapis/gnostic",
-    tag = "v0.2.0",
+    tag = "v0.2.2",
 )
 
 # for @io_k8s_kubernetes
@@ -181,7 +181,7 @@ go_repository(
 go_repository(
     name = "com_github_coreos_etcd",
     importpath = "github.com/coreos/etcd",
-    tag = "v3.3.10",
+    tag = "v3.3.25",
 )
 
 go_repository(
@@ -229,7 +229,7 @@ go_repository(
 go_repository(
     name = "com_github_emicklei_go_restful",
     importpath = "github.com/emicklei/go-restful",
-    tag = "v2.8.0",
+    tag = "v2.8.1",
 )
 
 go_repository(
@@ -241,7 +241,7 @@ go_repository(
 go_repository(
     name = "com_github_fsnotify_fsnotify",
     importpath = "github.com/fsnotify/fsnotify",
-    tag = "v1.4.7",
+    tag = "v1.4.9",
 )
 
 go_repository(
@@ -259,7 +259,7 @@ go_repository(
 go_repository(
     name = "com_github_go_ini_ini",
     importpath = "github.com/go-ini/ini",
-    tag = "v1.38.1",
+    tag = "v1.38.3",
 )
 
 go_repository(
@@ -271,25 +271,25 @@ go_repository(
 go_repository(
     name = "com_github_go_openapi_errors",
     importpath = "github.com/go-openapi/errors",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
     name = "com_github_go_openapi_jsonpointer",
     importpath = "github.com/go-openapi/jsonpointer",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
     name = "com_github_go_openapi_jsonreference",
     importpath = "github.com/go-openapi/jsonreference",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
     name = "com_github_go_openapi_loads",
     importpath = "github.com/go-openapi/loads",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
@@ -301,19 +301,19 @@ go_repository(
 go_repository(
     name = "com_github_go_openapi_spec",
     importpath = "github.com/go-openapi/spec",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
     name = "com_github_go_openapi_strfmt",
     importpath = "github.com/go-openapi/strfmt",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
     name = "com_github_go_openapi_swag",
     importpath = "github.com/go-openapi/swag",
-    tag = "v0.17.0",
+    tag = "v0.17.2",
 )
 
 go_repository(
@@ -325,7 +325,7 @@ go_repository(
 go_repository(
     name = "com_github_go_sql_driver_mysql",
     importpath = "github.com/go-sql-driver/mysql",
-    tag = "v1.4.0",
+    tag = "v1.4.1",
 )
 
 go_repository(
@@ -391,7 +391,7 @@ go_repository(
 go_repository(
     name = "com_github_hashicorp_golang_lru",
     importpath = "github.com/hashicorp/golang-lru",
-    tag = "v0.5.3",
+    tag = "v0.5.4",
 )
 
 go_repository(
@@ -409,7 +409,7 @@ go_repository(
 go_repository(
     name = "com_github_imdario_mergo",
     importpath = "github.com/imdario/mergo",
-    tag = "v0.3.5",
+    tag = "v0.3.11",
 )
 
 go_repository(
@@ -427,7 +427,7 @@ go_repository(
 go_repository(
     name = "com_github_jinzhu_gorm",
     importpath = "github.com/jinzhu/gorm",
-    tag = "v1.9.1",
+    tag = "v1.9.16",
 )
 
 go_repository(
@@ -481,7 +481,7 @@ go_repository(
 go_repository(
     name = "com_github_magiconair_properties",
     importpath = "github.com/magiconair/properties",
-    tag = "v1.8.0",
+    tag = "v1.8.4",
 )
 
 go_repository(
@@ -505,7 +505,7 @@ go_repository(
 go_repository(
     name = "com_github_minio_minio_go",
     importpath = "github.com/minio/minio-go",
-    tag = "v6.0.14",
+    tag = "v6.0.57",
 )
 
 go_repository(
@@ -547,7 +547,7 @@ go_repository(
 go_repository(
     name = "com_github_pborman_uuid",
     importpath = "github.com/pborman/uuid",
-    tag = "v1.2.0",
+    tag = "v1.2.1",
 )
 
 go_repository(
@@ -565,7 +565,7 @@ go_repository(
 go_repository(
     name = "com_github_pkg_errors",
     importpath = "github.com/pkg/errors",
-    tag = "v0.8.0",
+    tag = "v0.8.1",
 )
 
 go_repository(
@@ -577,7 +577,7 @@ go_repository(
 go_repository(
     name = "com_github_puerkitobio_purell",
     importpath = "github.com/PuerkitoBio/purell",
-    tag = "v1.1.0",
+    tag = "v1.1.1",
 )
 
 go_repository(
@@ -619,13 +619,13 @@ go_repository(
 go_repository(
     name = "com_github_spf13_cast",
     importpath = "github.com/spf13/cast",
-    tag = "v1.3.0",
+    tag = "v1.3.1",
 )
 
 go_repository(
     name = "com_github_spf13_cobra",
     importpath = "github.com/spf13/cobra",
-    tag = "v0.0.3",
+    tag = "v0.0.7",
 )
 
 go_repository(
@@ -637,13 +637,13 @@ go_repository(
 go_repository(
     name = "com_github_spf13_pflag",
     importpath = "github.com/spf13/pflag",
-    tag = "v1.0.3",
+    tag = "v1.0.5",
 )
 
 go_repository(
     name = "com_github_spf13_viper",
     importpath = "github.com/spf13/viper",
-    tag = "v1.3.0",
+    tag = "v1.3.2",
 )
 
 go_repository(
@@ -733,7 +733,7 @@ go_repository(
 go_repository(
     name = "in_gopkg_yaml_v2",
     importpath = "gopkg.in/yaml.v2",
-    tag = "v2.2.2",
+    tag = "v2.2.8",
 )
 
 go_repository(
@@ -745,7 +745,7 @@ go_repository(
 go_repository(
     name = "org_golang_google_appengine",
     importpath = "google.golang.org/appengine",
-    tag = "v1.6.1",
+    tag = "v1.6.7",
 )
 
 go_repository(
@@ -758,7 +758,7 @@ go_repository(
     name = "org_golang_google_grpc",
     build_file_proto_mode = "disable_global",
     importpath = "google.golang.org/grpc",
-    tag = "v1.23.0",
+    tag = "v1.23.1",
 )
 
 go_repository(
@@ -801,7 +801,7 @@ go_repository(
 go_repository(
     name = "org_golang_x_text",
     importpath = "golang.org/x/text",
-    tag = "v0.3.2",
+    tag = "v0.3.5",
 )
 
 go_repository(
@@ -831,13 +831,13 @@ go_repository(
 go_repository(
     name = "com_github_go_logr_zapr",
     importpath = "github.com/go-logr/zapr",
-    tag = "v0.1.0",
+    tag = "v0.1.1",
 )
 
 go_repository(
     name = "com_github_golang_protobuf",
     importpath = "github.com/golang/protobuf",
-    tag = "v1.3.2",
+    tag = "v1.3.5",
 )
 
 go_repository(
@@ -855,7 +855,7 @@ go_repository(
 go_repository(
     name = "com_github_prometheus_client_golang",
     importpath = "github.com/prometheus/client_golang",
-    tag = "v0.9.2",
+    tag = "v0.9.4",
 )
 
 go_repository(
@@ -872,7 +872,7 @@ go_repository(
 
 go_repository(
     name = "com_github_prometheus_procfs",
-    commit = "1dc9a6cbc91a",
+    commit = "46159f73e74d1cb8dc223deef9b2d049286f46b1",  # v0.0.11
     importpath = "github.com/prometheus/procfs",
 )
 
@@ -909,13 +909,13 @@ go_repository(
 go_repository(
     name = "com_github_docker_distribution",
     importpath = "github.com/docker/distribution",
-    tag = "v2.7.0",
+    tag = "v2.7.1",
 )
 
 go_repository(
     name = "com_github_opencontainers_go_digest",
     importpath = "github.com/opencontainers/go-digest",
-    tag = "v1.0.0-rc1",
+    tag = "v1.0.0",
 )
 
 go_repository(
@@ -939,7 +939,7 @@ go_repository(
 go_repository(
     name = "com_github_gorilla_websocket",
     importpath = "github.com/gorilla/websocket",
-    tag = "v1.4.0",
+    tag = "v1.4.2",
 )
 
 go_repository(
@@ -951,7 +951,7 @@ go_repository(
 go_repository(
     name = "com_github_creack_pty",
     importpath = "github.com/creack/pty",
-    tag = "v1.1.7",
+    tag = "v1.1.11",
 )
 
 go_repository(
@@ -987,7 +987,7 @@ go_repository(
 go_repository(
     name = "com_github_kr_pty",
     importpath = "github.com/kr/pty",
-    tag = "v1.1.1",
+    tag = "v1.1.8",
 )
 
 go_repository(
@@ -999,7 +999,7 @@ go_repository(
 go_repository(
     name = "com_github_rogpeppe_go_internal",
     importpath = "github.com/rogpeppe/go-internal",
-    tag = "v1.3.0",
+    tag = "v1.3.2",
 )
 
 go_repository(
@@ -1017,7 +1017,7 @@ go_repository(
 go_repository(
     name = "io_opencensus_go",
     importpath = "go.opencensus.io",
-    tag = "v0.22.0",
+    tag = "v0.22.5",
 )
 
 go_repository(
@@ -1065,13 +1065,13 @@ go_repository(
 go_repository(
     name = "com_github_stretchr_objx",
     importpath = "github.com/stretchr/objx",
-    tag = "v0.1.0",
+    tag = "v0.1.1",
 )
 
 go_repository(
     name = "io_k8s_sigs_testing_frameworks",
     importpath = "sigs.k8s.io/testing_frameworks",
-    tag = "v0.1.1",
+    tag = "v0.1.2",
 )
 
 go_repository(
