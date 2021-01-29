@@ -33,7 +33,7 @@
     {
         "depTypeList": ["go_repository"],
         "updateTypes": ["patch", "minor"],
-        "groupName": "Bazel workspace updates"
+        "groupName": "Bazel workspace dependencies"
 
     }
   ],
