@@ -10,11 +10,11 @@ require (
 	github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5 // indirect
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/ghodss/yaml v1.0.0
-	github.com/go-openapi/errors v0.19.2
-	github.com/go-openapi/runtime v0.19.4
-	github.com/go-openapi/strfmt v0.19.3
-	github.com/go-openapi/swag v0.19.8
-	github.com/go-openapi/validate v0.19.5
+	github.com/go-openapi/errors v0.19.9
+	github.com/go-openapi/runtime v0.19.24
+	github.com/go-openapi/strfmt v0.20.0
+	github.com/go-openapi/swag v0.19.12
+	github.com/go-openapi/validate v0.20.1
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.4.2
@@ -36,13 +36,13 @@ require (
 	github.com/robfig/cron v1.2.0
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/viper v1.3.2
-	github.com/stretchr/testify v1.5.1
-	golang.org/x/net v0.0.0-20200520004742-59133d7f0dd7
+	github.com/stretchr/testify v1.6.1
+	golang.org/x/net v0.0.0-20201202161906-c7110b5ffcbb
 	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a // indirect
 	google.golang.org/api v0.20.0
 	google.golang.org/genproto v0.0.0-20200317114155-1f3552e48f24
 	google.golang.org/grpc v1.28.0
-	gopkg.in/yaml.v2 v2.3.0
+	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.17.9
 	k8s.io/apimachinery v0.17.9
 	k8s.io/client-go v0.17.9
