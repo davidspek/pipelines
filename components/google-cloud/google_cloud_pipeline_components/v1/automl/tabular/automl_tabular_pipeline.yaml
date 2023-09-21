@@ -9053,7 +9053,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-2:
       container:
         args:
@@ -9081,7 +9081,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-3:
       container:
         args:
@@ -9109,7 +9109,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters:
       container:
         args:
@@ -9207,7 +9207,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters-2:
       container:
         args:
@@ -9305,7 +9305,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-attribution:
       container:
         args:
@@ -9498,7 +9498,7 @@ deploymentSpec:
           \ 'r') as f:\n    split_0_content = f.read()\n  with open(split_1, 'r')\
           \ as f:\n    split_1_content = f.read()\n  with open(splits, 'w') as f:\n\
           \    f.write(','.join([split_0_content, split_1_content]))\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-model-batch-explanation:
       container:
         args:
@@ -10317,7 +10317,7 @@ deploymentSpec:
           \  import json\n  # pylint: enable=g-import-not-at-top,import-outside-toplevel,redefined-outer-name,reimported\n\
           \  with open(split_uri, 'r') as f:\n    data_source = json.loads(f.read())\n\
           \    return data_source['tf_record_data_source']['file_patterns']\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-read-input-uri-2:
       container:
         args:
@@ -10351,7 +10351,7 @@ deploymentSpec:
           \  import json\n  # pylint: enable=g-import-not-at-top,import-outside-toplevel,redefined-outer-name,reimported\n\
           \  with open(split_uri, 'r') as f:\n    data_source = json.loads(f.read())\n\
           \    return data_source['tf_record_data_source']['file_patterns']\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-set-optional-inputs:
       container:
         args:
@@ -10438,7 +10438,7 @@ deploymentSpec:
           \n  Returns:\n    Boolean value. -> 'true' if empty, 'false' if not empty.\
           \ We need to use str\n    instead of bool due to a limitation in KFP compiler.\n\
           \  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-tabular-stats-and-example-gen:
       container:
         args:
@@ -10549,7 +10549,7 @@ deploymentSpec:
           \        f'{directory}/prediction.results-*',\n          ],\n          'coder':\
           \ 'PROTO_VALUE',\n      },\n  }\n  with open(result, 'w') as f:\n    f.write(json.dumps(data_source))\n\
           \n"
-        image: python:3.7
+        image: python:3.8
     exec-write-bp-result-path-2:
       container:
         args:
@@ -10585,7 +10585,7 @@ deploymentSpec:
           \        f'{directory}/prediction.results-*',\n          ],\n          'coder':\
           \ 'PROTO_VALUE',\n      },\n  }\n  with open(result, 'w') as f:\n    f.write(json.dumps(data_source))\n\
           \n"
-        image: python:3.7
+        image: python:3.8
 pipelineInfo:
   description: 'Complete AutoML Tables pipeline.
 

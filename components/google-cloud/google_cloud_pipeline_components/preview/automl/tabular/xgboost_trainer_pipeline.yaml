@@ -3118,7 +3118,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-transform-engine:
       container:
         args:
@@ -3415,7 +3415,7 @@ deploymentSpec:
           \      'predictionSchemaUri': os.path.join(model_dir, 'prediction_schema.yaml'),\n\
           \  }\n  unmanaged_container_model.uri = model_dir\n\n  return collections.namedtuple('Outputs',\
           \ ['worker_pool_specs'])(\n      worker_pool_specs_lst\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-prediction-type-for-xgboost:
       container:
         args:
@@ -3450,7 +3450,7 @@ deploymentSpec:
           \ Must be one of'\n        ' [reg:squarederror, reg:squaredlogerror, reg:logistic,\
           \ reg:gamma,'\n        ' reg:tweedie, reg:pseudohubererror, binary:logistic,'\n\
           \        ' multi:softprob].'\n    )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-model-batch-predict:
       container:
         args:

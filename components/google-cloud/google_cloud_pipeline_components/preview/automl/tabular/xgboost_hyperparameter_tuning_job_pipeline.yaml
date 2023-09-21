@@ -2915,7 +2915,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-transform-engine:
       container:
         args:
@@ -3127,7 +3127,7 @@ deploymentSpec:
           \      ],\n  )(\n      worker_pool_specs_lst,\n      get_gcs_path(instance_schema_uri),\n\
           \      get_gcs_path(prediction_schema_uri),\n      get_gcs_path(trials),\n\
           \      get_gcs_path(prediction_docker_uri_output),\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-best-hyperparameter-tuning-job-trial:
       container:
         args:
@@ -3233,7 +3233,7 @@ deploymentSpec:
           \ Must be one of'\n        ' [reg:squarederror, reg:squaredlogerror, reg:logistic,\
           \ reg:gamma,'\n        ' reg:tweedie, reg:pseudohubererror, binary:logistic,'\n\
           \        ' multi:softprob].'\n    )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-xgboost-study-spec-parameters:
       container:
         args:
@@ -3616,7 +3616,7 @@ deploymentSpec:
           \      # specs from user input and the default booster parameter specs.\n\
           \      override_param['conditional_parameter_specs'] = booster_param_specs\n\
           \n  return study_spec_parameters\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-model-batch-predict:
       container:
         args:

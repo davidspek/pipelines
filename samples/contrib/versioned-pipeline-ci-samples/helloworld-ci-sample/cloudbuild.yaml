@@ -12,7 +12,7 @@ steps:
         "${_CODE_PATH}/helloworld",
       ]
     id: "BuildImages"
-  - name: "python:3.7-slim"
+  - name: "python:3.8-slim"
     entrypoint: "/bin/sh"
     args: [
         "-c",
@@ -38,7 +38,7 @@ steps:
 
   - name: "gcr.io/cloud-builders/curl"
     entrypoint: "/bin/sh"
-    args: 
+    args:
       [
         "-c",
         "curl.bash $COMMIT_SHA ${_PIPELINE_ID} ${_GS_BUCKET} ${_PIPELINE_ENDPOINT}"

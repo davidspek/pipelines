@@ -6088,7 +6088,7 @@ deploymentSpec:
           \          'stage_2_single_run_max_secs',\n      ],\n  )(\n      stage_1_deadline_hours,\n\
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters-2:
       container:
         args:
@@ -6150,7 +6150,7 @@ deploymentSpec:
           \          'stage_2_single_run_max_secs',\n      ],\n  )(\n      stage_1_deadline_hours,\n\
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-attribution:
       container:
         args:
@@ -6399,7 +6399,7 @@ deploymentSpec:
           \ = 'point'\n  else:\n    forecasting_type = 'quantile'\n\n  return collections.namedtuple(\n\
           \      'Outputs',\n      (\n          'forecasting_type',\n          'quantiles',\n\
           \      ),\n  )(forecasting_type, quantiles)\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-finalize-eval-quantile-parameters-2:
       container:
         args:
@@ -6433,7 +6433,7 @@ deploymentSpec:
           \ = 'point'\n  else:\n    forecasting_type = 'quantile'\n\n  return collections.namedtuple(\n\
           \      'Outputs',\n      (\n          'forecasting_type',\n          'quantiles',\n\
           \      ),\n  )(forecasting_type, quantiles)\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-or-create-model-description:
       container:
         args:
@@ -6468,7 +6468,7 @@ deploymentSpec:
           \    return f'{original_description} From: {pipeline_url}'\n\n  # The pipeline\
           \ url contains KFP placeholders injected at runtime.\n  return f'Vertex\
           \ forecasting model trained in the pipeline: {pipeline_url}'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-or-create-model-description-2:
       container:
         args:
@@ -6503,7 +6503,7 @@ deploymentSpec:
           \    return f'{original_description} From: {pipeline_url}'\n\n  # The pipeline\
           \ url contains KFP placeholders injected at runtime.\n  return f'Vertex\
           \ forecasting model trained in the pipeline: {pipeline_url}'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-prediction-image-uri:
       container:
         args:
@@ -6539,7 +6539,7 @@ deploymentSpec:
           \  }\n  if model_type not in images:\n    raise ValueError(\n        f'Invalid\
           \ forecasting model type: {model_type}. Valid options are: '\n        f'{images.keys()}.'\n\
           \    )\n  return images[model_type]\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-prediction-image-uri-2:
       container:
         args:
@@ -6575,7 +6575,7 @@ deploymentSpec:
           \  }\n  if model_type not in images:\n    raise ValueError(\n        f'Invalid\
           \ forecasting model type: {model_type}. Valid options are: '\n        f'{images.keys()}.'\n\
           \    )\n  return images[model_type]\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-predictions-column:
       container:
         args:
@@ -7239,7 +7239,7 @@ deploymentSpec:
           \n  Returns:\n    Boolean value. -> 'true' if empty, 'false' if not empty.\
           \ We need to use str\n    instead of bool due to a limitation in KFP compiler.\n\
           \  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-table-to-uri:
       container:
         args:

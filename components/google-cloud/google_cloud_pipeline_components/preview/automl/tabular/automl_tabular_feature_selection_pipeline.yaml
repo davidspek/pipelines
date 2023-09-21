@@ -9282,7 +9282,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-2:
       container:
         args:
@@ -9310,7 +9310,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-3:
       container:
         args:
@@ -9338,7 +9338,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters:
       container:
         args:
@@ -9436,7 +9436,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters-2:
       container:
         args:
@@ -9534,7 +9534,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-check-if-binary-classification:
       container:
         args:
@@ -9568,7 +9568,7 @@ deploymentSpec:
           \  with open(example_gen_metadata, 'r') as f:\n    metadata_path = f.read()\n\
           \    metadata = json.loads(metadata_path)\n    return str(metadata['objective']\
           \ == 'binary_classification').lower()\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-attribution:
       container:
         args:
@@ -9761,7 +9761,7 @@ deploymentSpec:
           \ 'r') as f:\n    split_0_content = f.read()\n  with open(split_1, 'r')\
           \ as f:\n    split_1_content = f.read()\n  with open(splits, 'w') as f:\n\
           \    f.write(','.join([split_0_content, split_1_content]))\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-model-batch-explanation:
       container:
         args:
@@ -10602,7 +10602,7 @@ deploymentSpec:
           \n  train_spec['transformations'] = purged_transformation_list\n  metadata['train_spec']\
           \ = train_spec\n\n  with open(output_metadata, 'w') as f:\n    f.write(json.dumps(metadata))\n\
           \n"
-        image: python:3.7
+        image: python:3.8
     exec-read-input-uri:
       container:
         args:
@@ -10636,7 +10636,7 @@ deploymentSpec:
           \  import json\n  # pylint: enable=g-import-not-at-top,import-outside-toplevel,redefined-outer-name,reimported\n\
           \  with open(split_uri, 'r') as f:\n    data_source = json.loads(f.read())\n\
           \    return data_source['tf_record_data_source']['file_patterns']\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-read-input-uri-2:
       container:
         args:
@@ -10670,7 +10670,7 @@ deploymentSpec:
           \  import json\n  # pylint: enable=g-import-not-at-top,import-outside-toplevel,redefined-outer-name,reimported\n\
           \  with open(split_uri, 'r') as f:\n    data_source = json.loads(f.read())\n\
           \    return data_source['tf_record_data_source']['file_patterns']\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-string-not-empty:
       container:
         args:
@@ -10700,7 +10700,7 @@ deploymentSpec:
           \n  Returns:\n    Boolean value. -> 'true' if empty, 'false' if not empty.\
           \ We need to use str\n    instead of bool due to a limitation in KFP compiler.\n\
           \  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-tabular-feature-ranking-and-selection:
       container:
         args:
@@ -10857,7 +10857,7 @@ deploymentSpec:
           \        f'{directory}/prediction.results-*',\n          ],\n          'coder':\
           \ 'PROTO_VALUE',\n      },\n  }\n  with open(result, 'w') as f:\n    f.write(json.dumps(data_source))\n\
           \n"
-        image: python:3.7
+        image: python:3.8
     exec-write-bp-result-path-2:
       container:
         args:
@@ -10893,7 +10893,7 @@ deploymentSpec:
           \        f'{directory}/prediction.results-*',\n          ],\n          'coder':\
           \ 'PROTO_VALUE',\n      },\n  }\n  with open(result, 'w') as f:\n    f.write(json.dumps(data_source))\n\
           \n"
-        image: python:3.7
+        image: python:3.8
 pipelineInfo:
   description: The AutoML Tabular pipeline.
   name: automl-tabular-feature-selection-pipeline

@@ -35,7 +35,7 @@ steps:
         "${_CODE_PATH}/visualize_table/Dockerfile",
       ]
     id: "BuildVisualizeTableImage"
-  
+
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
@@ -114,7 +114,7 @@ steps:
     id: "PushSubmitImage"
     waitFor: ["BuildSubmitImage"]
 
-  - name: "python:3.7-slim"
+  - name: "python:3.8-slim"
     entrypoint: "/bin/sh"
     args: [
         "-c",
@@ -155,8 +155,8 @@ steps:
         /builder/kubectl.bash;
         pip3 install kfp;
         pip3 install kubernetes;
-        python3 create_pipeline_version_and_run.py 
-        --pipeline_id ${_PIPELINE_ID} 
+        python3 create_pipeline_version_and_run.py
+        --pipeline_id ${_PIPELINE_ID}
         --commit_sha $COMMIT_SHA
         --bucket_name ${_GS_BUCKET}
         --gcr_address ${_GCR_PATH}"

@@ -51,7 +51,7 @@ def gcs_list_buckets():
 
 gcs_list_buckets_op = components.create_component_from_func(
     gcs_list_buckets,
-    base_image='python:3.7',
+    base_image='python:3.8',
     packages_to_install=['google-cloud-storage==1.31.2'],
 )
 

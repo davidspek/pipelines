@@ -3185,7 +3185,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-feature-transform-engine:
       container:
         args:
@@ -3539,7 +3539,7 @@ deploymentSpec:
           \   'training_disk_spec',\n          'eval_machine_spec',\n          'eval_replica_count',\n\
           \      ],\n  )(\n      training_machine_spec,\n      training_disk_spec,\n\
           \      eval_machine_spec,\n      eval_replica_count,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-set-optional-inputs:
       container:
         args:

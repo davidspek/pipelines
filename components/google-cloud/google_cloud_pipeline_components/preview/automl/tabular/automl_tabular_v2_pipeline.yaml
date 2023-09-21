@@ -10238,7 +10238,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-2:
       container:
         args:
@@ -10266,7 +10266,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-bool-identity-3:
       container:
         args:
@@ -10294,7 +10294,7 @@ deploymentSpec:
           \ *\n\ndef _bool_identity(value: bool) -> str:\n  \"\"\"Returns boolean\
           \ value.\n\n  Args:\n    value: Boolean value to return\n\n  Returns:\n\
           \    Boolean value.\n  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters:
       container:
         args:
@@ -10392,7 +10392,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-calculate-training-parameters-2:
       container:
         args:
@@ -10490,7 +10490,7 @@ deploymentSpec:
           \      stage_1_single_run_max_secs,\n      stage_2_deadline_hours,\n   \
           \   stage_2_single_run_max_secs,\n      distill_stage_1_deadline_hours,\n\
           \      reduce_search_space_mode,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-distillation-stage-feature-transform-engine:
       container:
         args:
@@ -10838,7 +10838,7 @@ deploymentSpec:
           \ collections.namedtuple(\n      'Outputs',\n      [\n          'bigquery_destination_output_uri',\n\
           \      ],\n  )(\n      f'{bigquery_staging_dataset_uri}.{table_prefix}{model_display_name}{curr_time}',\n\
           \  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-bigquery-destination-output-uri-2:
       container:
         args:
@@ -10876,7 +10876,7 @@ deploymentSpec:
           \ collections.namedtuple(\n      'Outputs',\n      [\n          'bigquery_destination_output_uri',\n\
           \      ],\n  )(\n      f'{bigquery_staging_dataset_uri}.{table_prefix}{model_display_name}{curr_time}',\n\
           \  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-bp-bq-output-table:
       container:
         args:
@@ -10910,7 +10910,7 @@ deploymentSpec:
           \n  return collections.namedtuple(\n      'Outputs',\n      [\n        \
           \  'bq_output_table_uri',\n      ],\n  )(\n      f\"{bp_job.metadata['bigqueryOutputDataset']}.{bp_job.metadata['bigqueryOutputTable']}\"\
           ,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-bp-bq-output-table-2:
       container:
         args:
@@ -10944,7 +10944,7 @@ deploymentSpec:
           \n  return collections.namedtuple(\n      'Outputs',\n      [\n        \
           \  'bq_output_table_uri',\n      ],\n  )(\n      f\"{bp_job.metadata['bigqueryOutputDataset']}.{bp_job.metadata['bigqueryOutputTable']}\"\
           ,\n  )\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-get-transform-config-path:
       container:
         args:
@@ -11023,7 +11023,7 @@ deploymentSpec:
           \ 'r') as f:\n    split_0_content = f.read()\n  with open(split_1, 'r')\
           \ as f:\n    split_1_content = f.read()\n  with open(splits, 'w') as f:\n\
           \    f.write(','.join([split_0_content, split_1_content]))\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-model-batch-explanation:
       container:
         args:
@@ -11987,7 +11987,7 @@ deploymentSpec:
           \n  Returns:\n    Boolean value. -> 'true' if empty, 'false' if not empty.\
           \ We need to use str\n    instead of bool due to a limitation in KFP compiler.\n\
           \  \"\"\"\n  return 'true' if value else 'false'\n\n"
-        image: python:3.7
+        image: python:3.8
     exec-training-configurator-and-validator:
       container:
         args:
